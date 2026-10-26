@@ -106,6 +106,13 @@ html {
   padding: 40px;
   border-radius: 15px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  p{
+    color: black;
+  }
+  h3{
+    color: black;
+  }
+
 }
 
 .about-box h3 {
@@ -143,3 +150,11 @@ html {
     padding: 60px 0;
   }
 }
+.container{
+  background-color: #101827;
+  color: white;
+
+}
+p{
+    color: white;
+  }
