@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
+.section-padding {
+  padding: 90px 0;
+}
+
+/* Navbar */
+.navbar {
+  padding: 15px 0;
+}
+
+.navbar-brand {
+  font-size: 26px;
+  color: red !important;
+}
+
+.nav-link {
+  color: white !important;
+  margin-left: 20px;
+}
+
+.nav-link:hover {
+  color: #4da6ff !important;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #101c3d, #1456a0);
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 110px 20px 60px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: auto;
+  color: #e0e0e0;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #1684f6;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+}
+
+/* Services */
+.service-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-icon {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.service-card h4 {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.service-card p {
+  color: #666;
+}
+
+/* About Section */
+.about-section {
+  background-color: #f1f6fc;
+}
+
+.about-section h2 {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.about-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.about-box h3 {
+  margin-bottom: 25px;
+}
+
+/* Contact */
+#contact h2 {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Footer */
+.footer {
+  background-color: #101827;
+  color: white;
+  padding: 25px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .nav-link {
+    margin-left: 0;
+  }
+
+  .section-padding {
+    padding: 60px 0;
+  }
+}
