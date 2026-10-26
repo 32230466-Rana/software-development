@@ -106,10 +106,12 @@ html {
   padding: 40px;
   border-radius: 15px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-  p{
+
+  p {
     color: black;
   }
-  h3{
+
+  h3 {
     color: black;
   }
 
@@ -150,11 +152,13 @@ html {
     padding: 60px 0;
   }
 }
-.container{
-  background-color: #101827;
+
+.container {
+  background-color: #101828;
   color: white;
 
 }
-p{
-    color: white;
-  }
+
+p {
+  color: white;
+}
