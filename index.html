@@ -4,36 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TechNova | Software Development</title>
-
-    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
-    <h1>hiiiiii</h1>
   </head>
   <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <!-- Updated Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top site-navbar">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="#">TechNova</a>
-
+        <a
+          class="navbar-brand d-flex align-items-center gap-2 fw-bold"
+          href="#home"
+        >
+          <span class="brand-mark">T<span>✦</span></span
+          ><span>Tech<span class="brand-accent">Nova</span></span>
+        </a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarMenu"
+          aria-controls="navbarMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarMenu">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav mx-auto align-items-lg-center">
             <li class="nav-item">
-              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link active" href="#home">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#services">Services</a>
@@ -45,32 +47,71 @@
               <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
+          <a href="#contact" class="btn nav-cta mt-3 mt-lg-0"
+            >Let's Talk <span aria-hidden="true">↗</span></a
+          >
         </div>
       </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Updated Hero -->
     <section id="home" class="hero">
-      <div class="container text-center">
-        <h1>We Build Smart Software Solutions</h1>
-        <p class="lead mt-3">
-          Transform your ideas into powerful websites, mobile applications, and
-          modern software.
-        </p>
-        <a href="#services" class="btn btn-primary btn-lg mt-3">
-          Explore Our Services
-        </a>
+      <div class="container hero-content">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <span class="hero-eyebrow"
+              ><span class="status-dot"></span> DIGITAL SOLUTIONS FOR MODERN
+              BUSINESSES</span
+            >
+            <h1 class="hero-title mt-4">
+              We Turn Bold Ideas Into <span>Brilliant Software.</span>
+            </h1>
+            <p class="hero-description mt-4">
+              From stunning websites to powerful applications, we build digital
+              experiences that help your business grow and stand out.
+            </p>
+            <div class="d-flex flex-wrap gap-3 mt-4 hero-actions">
+              <a href="#contact" class="btn hero-primary"
+                >Start Your Project <span aria-hidden="true">↗</span></a
+              >
+              <a href="#services" class="btn hero-secondary"
+                >Explore Services <span aria-hidden="true">→</span></a
+              >
+            </div>
+            <div class="hero-note mt-5">
+              <span class="note-line"></span> DESIGN • DEVELOP • DELIVER
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-image-wrap">
+              <img
+                class="hero-image"
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=85"
+                alt="Laptop with code on a software developer's desk"
+              />
+              <div class="image-glow"></div>
+              <div class="floating-card">
+                <span class="floating-icon">✦</span>
+                <div>
+                  <strong>Built for the future</strong
+                  ><small>Modern, scalable solutions</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <div class="hero-orb hero-orb-one"></div>
+      <div class="hero-orb hero-orb-two"></div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Services Section: unchanged -->
     <section id="services" class="section-padding">
       <div class="container">
-        <h2 class="text-center mb-3">Our Servicessssssss</h2>
-        <p class="text-center text-muted mb-5">
+        <h2 class="text-center mb-3">Our Services</h2>
+        <p class="text-center  mb-5">
           Professional technology solutions for your business.
         </p>
-
         <div class="row g-4">
           <div class="col-md-4">
             <div class="card service-card h-100 text-center">
@@ -84,7 +125,6 @@
               </div>
             </div>
           </div>
-
           <div class="col-md-4">
             <div class="card service-card h-100 text-center">
               <div class="card-body p-4">
@@ -97,7 +137,6 @@
               </div>
             </div>
           </div>
-
           <div class="col-md-4">
             <div class="card service-card h-100 text-center">
               <div class="card-body p-4">
@@ -114,7 +153,7 @@
       </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About Section: unchanged -->
     <section id="about" class="section-padding about-section">
       <div class="container">
         <div class="row align-items-center g-4">
@@ -128,14 +167,13 @@
               Our mission is to help businesses grow using modern websites,
               applications, and custom software systems.
             </p>
-            <a href="#contact" class="btn btn-primary"> Work With Us </a>
+            <a href="#contact" class="btn btn-primary">Work With Us</a>
           </div>
-
           <div class="col-md-6 text-center">
             <div class="about-box">
               <h3>Why Choose Us?</h3>
               <p>✔ Modern Technologies</p>
-              <p>✔ Professional Development</p>
+              <p class="p">✔ Professional Development</p>
               <p>✔ Creative Solutions</p>
               <p>✔ Reliable Support</p>
             </div>
@@ -144,32 +182,28 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Section: unchanged -->
     <section id="contact" class="section-padding">
       <div class="container text-center">
         <h2>Contact Us</h2>
-        <p class="text-muted mb-4">
+        <p class=" mb-4">
           Have a project in mind? Get in touch with our team.
         </p>
-
         <p>Email: info@technova.example</p>
         <p>Phone: +961 XX XXX XXX</p>
         <p>Location: Lebanon</p>
-
-        <a href="mailto:info@technova.example" class="btn btn-primary mt-3">
-          Send Email
-        </a>
+        <a href="mailto:info@technova.example" class="btn btn-primary mt-3"
+          >Send Email</a
+        >
       </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer: unchanged -->
     <footer class="footer text-center">
       <div class="container">
         <p class="mb-0">&copy; 2026 TechNova. All Rights Reserved.</p>
       </div>
     </footer>
-
-    <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
